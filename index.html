@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reese Gallagher</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/vendor/jquery.js"></script>
+  <script src="/js/vendor/fastclick.js"></script>
+  <script src="/js/foundation.min.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+
+	<h1>REDDIT ANALYSIS BOT</h1>
+	
+	<div id="menu">	
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="stats.php">STATS</a></li>
+		</ul>
+	</div>
+	
+	<p><i>An automated reddit bot that analyzes the front page submissions and to which
+	subreddit they were posted to every 30 minutes. From there the bot uploads its findings to 
+	a cloud hosted database and tallies up every repeating subreddit. This is then pushed to a 
+	web front for organized viewing.</i></p>
+
+	<h3>WORKFLOW<h3/>
+	<ul>
+		<li>Heroku deployed <i>python bot</i> wakes and tallies top 25 submission subreddit attributes.</li>
+		<li>Inserts subreddit, a count value and a datestamp into a stats table in a database.</li>
+		<li>Utilizes PHP to 'post' these values to a webpage and sorts them simultaneously.</li> 
+	</ul>
+	
+	<h3>TOOLS USED</h3>
+	<ul>
+		<li>PRAW: reddit's python based API.</li>
+		<li>Heroku: badass cloud processing service with tons of add ons.</li>
+		<li>Postgres: cloud based database system, mySQL but with awesome heroku integration.</li>
+		<li>PHP: whatever,it's just PHP.</li>
+		<li>Bluehost: web hosting</li>
+	</ul>
+	
+	<img class="resize" style="align:center, padding-top:20px" src="http://i.imgur.com/tMZpxgM.png" >
+
+<div>
+
+<script>
+</script>
+
+</body>
+
+</html>
